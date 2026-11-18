@@ -1,0 +1,35 @@
+@use '../../styles/theme';
+
+.slide-indicators {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.15rem;
+  margin-block-start: 1rem;
+
+  &__button {
+    display: grid;
+    place-items: center;
+    inline-size: 1.75rem;
+    aspect-ratio: 1;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: theme.$control;
+    cursor: pointer;
+
+    &::before {
+      inline-size: 0.55rem;
+      aspect-ratio: 1;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+      content: '';
+    }
+
+    &[aria-current='true']::before,
+    &:hover::before {
+      background: currentColor;
+    }
+  }
+}

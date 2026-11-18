@@ -1,0 +1,6 @@
+@mixin on-hover {
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.35em;
+  }
+}

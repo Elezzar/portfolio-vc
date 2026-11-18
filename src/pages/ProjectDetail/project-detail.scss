@@ -1,0 +1,64 @@
+@use '../../styles/link-underline';
+@use '../../styles/theme';
+
+.project-detail__content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(1.5rem, 5vw, 4rem);
+
+  @media (min-width: 820px) {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  }
+}
+
+.project-detail__copy {
+  display: grid;
+  gap: 0.65rem;
+  min-inline-size: 0;
+
+  .project-detail__heading,
+  .project-detail__repository {
+    margin: 0;
+    color: theme.$title;
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-weight: 700;
+
+    &:not(:first-child) {
+      margin-block-start: 0.8rem;
+    }
+  }
+
+  .project-detail__paragraph {
+    margin: 0;
+    color: theme.$muted;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+  }
+}
+
+.project-detail__repository {
+  justify-self: start;
+  text-decoration: none;
+  cursor: pointer;
+
+  @include link-underline.on-hover;
+}
+
+.project-detail__back {
+  display: block;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  margin: clamp(1.5rem, 4vw, 2.75rem) auto 0;
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  background: theme.$title;
+  color: #2e1843;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    background: theme.$control;
+  }
+}

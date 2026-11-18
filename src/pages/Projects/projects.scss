@@ -1,0 +1,34 @@
+.project-page.projects {
+  padding-block: 0;
+}
+
+.projects__slider {
+  row-gap: 0.55rem;
+}
+
+.projects__cards {
+  --project-gap: clamp(0.75rem, 3vw, 2.75rem);
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - (var(--project-columns) - 1) * var(--project-gap)) / var(--project-columns));
+  grid-area: 1 / 2 / span 3;
+  grid-template-rows: subgrid;
+  column-gap: var(--project-gap);
+  overflow: clip;
+  min-inline-size: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.projects__item {
+  display: grid;
+  grid-row: 1 / span 3;
+  grid-template-rows: subgrid;
+  transform: translateX(calc(-1 * var(--project-slide) * (100% + var(--project-gap))));
+}
+
+.projects__card {
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+}

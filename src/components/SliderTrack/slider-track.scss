@@ -1,0 +1,9 @@
+.slider-track {
+  min-inline-size: 0;
+  overflow: clip;
+
+  &__belt {
+    display: flex;
+    transform: translateX(calc(-100% * var(--slider-position)));
+  }
+}

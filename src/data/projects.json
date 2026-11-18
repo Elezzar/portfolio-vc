@@ -1,0 +1,259 @@
+[
+  {
+    "id": "russian-travel",
+    "repositoryUrl": "https://github.com/Elezzar/russian-travel",
+    "name": {
+      "ru": "Путешествие по России",
+      "en": "Russian Travel"
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "BEM",
+      "CSS Grid",
+      "Flexbox"
+    ],
+    "images": [
+      {
+        "file": "russian-travel-cover.webp",
+        "caption": {
+          "ru": "Первый экран",
+          "en": "First screen"
+        }
+      },
+      {
+        "file": "russian-travel-gallery.webp",
+        "caption": {
+          "ru": "Фотогалерея",
+          "en": "Photo gallery"
+        }
+      },
+      {
+        "file": "russian-travel-mobile.webp",
+        "caption": {
+          "ru": "Мобильная версия",
+          "en": "Mobile layout"
+        }
+      }
+    ],
+    "copy": {
+      "ru": {
+        "summary": "Адаптивный сайт о путешествиях по России с фотогалереей и подборкой мест.",
+        "description": "Адаптивный сайт о природных достопримечательностях России. В этом проекте я работал с двумя типами раскладки: фотогалерея на CSS Grid меняет число колонок в зависимости от ширины экрана, а блоки с описаниями мест перестраиваются под мобильный экран. В галерее кейса можно сравнить десктопную и мобильную версии."
+      },
+      "en": {
+        "summary": "A responsive travel site with a photo gallery and a guide to destinations across Russia.",
+        "description": "A responsive website about Russia’s natural landmarks. I worked with two types of layouts: the CSS Grid photo gallery changes its column count with the viewport, and the destination sections rearrange on mobile. The screenshots show both desktop and mobile layouts."
+      }
+    }
+  },
+  {
+    "id": "friends-fund-project",
+    "repositoryUrl": "https://github.com/Elezzar/friends-fund-project",
+    "name": {
+      "ru": "Фонд «Друзья»",
+      "en": "Friends Foundation"
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "BEM",
+      "JavaScript"
+    ],
+    "images": [
+      {
+        "file": "friends-fund-home.webp",
+        "caption": {
+          "ru": "Первый экран сайта фонда",
+          "en": "Foundation homepage"
+        }
+      },
+      {
+        "file": "friends-fund-cover.webp",
+        "caption": {
+          "ru": "Чем мы занимаемся?",
+          "en": "What We Do"
+        }
+      },
+      {
+        "file": "friends-fund-resources.webp",
+        "caption": {
+          "ru": "Полезно",
+          "en": "Resources"
+        }
+      }
+    ],
+    "copy": {
+      "ru": {
+        "summary": "Командный проект сайта фонда. Сверстал блоки «Чем мы занимаемся?» и «Полезно».",
+        "description": "В командном проекте сайта фонда я сверстал два блока главной страницы: «Чем мы занимаемся?» и «Полезно». В первом собрал композицию из цветных карточек с иллюстрациями, во втором — сетку материалов. Также помогал со стилями слайдера, вместе с командой разбирался в его работе и следил за сроками выполнения задач."
+      },
+      "en": {
+        "summary": "A team-built foundation website. I built the “What We Do” and “Resources” sections.",
+        "description": "As part of the foundation’s website team, I built two homepage sections: “What We Do” and “Resources.” The first brings together illustrated color cards, and the second presents resources in a grid. I also helped style the carousel, worked with the team to understand its navigation, and tracked task deadlines."
+      }
+    }
+  },
+  {
+    "id": "react-burger",
+    "repositoryUrl": "https://github.com/Elezzar/react-burger",
+    "name": {
+      "ru": "Stellar Burgers",
+      "en": "Stellar Burgers"
+    },
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Redux",
+      "React Router",
+      "React DnD",
+      "CSS Modules"
+    ],
+    "images": [
+      {
+        "file": "stellar-burgers-cover.webp",
+        "caption": {
+          "ru": "Конструктор бургера",
+          "en": "Burger builder"
+        }
+      },
+      {
+        "file": "stellar-burgers-ingredient.webp",
+        "caption": {
+          "ru": "Детали ингредиента",
+          "en": "Ingredient details"
+        }
+      },
+      {
+        "file": "stellar-burgers-order-success.webp",
+        "caption": {
+          "ru": "Подтверждение демо-заказа",
+          "en": "Demo order confirmation"
+        }
+      },
+      {
+        "file": "stellar-burgers-register.webp",
+        "caption": {
+          "ru": "Регистрация",
+          "en": "Registration"
+        }
+      },
+      {
+        "file": "stellar-burgers-login.webp",
+        "caption": {
+          "ru": "Вход в аккаунт",
+          "en": "Sign-in"
+        }
+      },
+      {
+        "file": "stellar-burgers-order-feed.webp",
+        "caption": {
+          "ru": "Лента демо-заказов",
+          "en": "Demo order feed"
+        }
+      }
+    ],
+    "copy": {
+      "ru": {
+        "summary": "React-приложение для сборки бургера из ингредиентов и оформления заказа.",
+        "description": "Главный сценарий приложения — собрать бургер из ингредиентов и оформить заказ. Ингредиенты перетаскиваются в конструктор, а Redux хранит состав и состояние заказа. Отдельная лента получает обновления по WebSocket и показывает, какие заказы готовы, а какие ещё в работе. В галерее показаны конструктор, подтверждение заказа и лента с демонстрационными данными."
+      },
+      "en": {
+        "summary": "A React app for building a custom burger and placing an order.",
+        "description": "The main flow is building a burger and placing an order. Users drag ingredients into the builder, and Redux holds the burger composition and order state. A separate feed receives WebSocket updates and shows completed orders and orders still in progress. The gallery shows the builder, confirmation dialog, and order feed with demo data."
+      }
+    }
+  },
+  {
+    "id": "mesto-project",
+    "repositoryUrl": "https://github.com/Elezzar/mesto-project",
+    "name": {
+      "ru": "Mesto",
+      "en": "Mesto"
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "Nested BEM",
+      "JavaScript",
+      "REST API",
+      "Webpack"
+    ],
+    "images": [
+      {
+        "file": "mesto-cover.webp",
+        "caption": {
+          "ru": "Профиль и фотокарточки",
+          "en": "Profile and photo cards"
+        }
+      },
+      {
+        "file": "mesto-edit.webp",
+        "caption": {
+          "ru": "Редактирование профиля",
+          "en": "Edit profile"
+        }
+      },
+      {
+        "file": "mesto-add-card.webp",
+        "caption": {
+          "ru": "Добавление карточки",
+          "en": "Add a photo card"
+        }
+      },
+      {
+        "file": "mesto-photo.webp",
+        "caption": {
+          "ru": "Просмотр фотографии",
+          "en": "Enlarged photo"
+        }
+      }
+    ],
+    "copy": {
+      "ru": {
+        "summary": "Веб-приложение для публикации фотографий и редактирования профиля.",
+        "description": "Веб-приложение для публикации фотографий. Пользователь может изменить профиль, добавить карточку по ссылке на изображение или открыть фотографию крупнее. Формы проверяют ввод перед отправкой, а профиль, карточки и лайки обновляются через API. На скриншотах можно увидеть основной экран и формы с демонстрационными данными."
+      },
+      "en": {
+        "summary": "A web app for sharing photos and editing a personal profile.",
+        "description": "A web app for sharing photos. Users can edit their profile, add a card from an image URL, or open a larger photo preview. Forms validate input before submission, while profile data, cards, and likes update through the API. The screenshots show the main screen and forms with demo data."
+      }
+    }
+  },
+  {
+    "id": "mesto-project-plus",
+    "repositoryUrl": "https://github.com/Elezzar/mesto-project-plus",
+    "name": {
+      "ru": "Mesto API",
+      "en": "Mesto API"
+    },
+    "technologies": [
+      "Node.js",
+      "Express",
+      "TypeScript",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "Celebrate"
+    ],
+    "images": [
+      {
+        "file": "mesto-api-cover.webp",
+        "caption": {
+          "ru": "Схема REST API",
+          "en": "REST API architecture"
+        }
+      }
+    ],
+    "copy": {
+      "ru": {
+        "summary": "REST API для пользователей и фотокарточек приложения Mesto.",
+        "description": "Серверная часть приложения для работы с профилями и фотокарточками. Запросы проходят валидацию, а защищённые маршруты используют JWT-аутентификацию. API проверяет права на удаление карточки и хранит в MongoDB данные пользователей, ссылки на изображения и лайки. На схеме показано, как клиент обращается к Express API и где хранятся данные."
+      },
+      "en": {
+        "summary": "A REST API for Mesto user profiles and photo cards.",
+        "description": "The backend handles user profiles and photo cards. It validates requests and uses JWT authentication for protected routes. The API checks permissions before deleting cards and stores user data, image URLs, and likes in MongoDB. The diagram shows how the client calls the Express API and where the data is stored."
+      }
+    }
+  }
+]

@@ -1,0 +1,22 @@
+@use '../../styles/round-button';
+
+.slider-arrow {
+  @include round-button.base;
+
+  &__icon {
+    display: block;
+    inline-size: 60%;
+    aspect-ratio: 1;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
+
+.slider-arrow:disabled {
+  opacity: 0.45;
+  cursor: default;
+  background: transparent;
+}

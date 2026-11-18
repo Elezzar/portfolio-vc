@@ -1,0 +1,19 @@
+.slider-frame {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  column-gap: clamp(0.4rem, 1.8vw, 1.5rem);
+
+
+  &__arrow {
+    grid-row: 1;
+    align-self: center;
+  }
+
+  &__arrow_previous {
+    grid-column: 1;
+  }
+
+  &__arrow_next {
+    grid-column: 3;
+  }
+}

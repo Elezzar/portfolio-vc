@@ -1,0 +1,28 @@
+@use '../../styles/theme';
+
+.project-page {
+  min-inline-size: 0;
+  padding-block: clamp(2.5rem, 8vh, 6rem) clamp(2.5rem, 7vw, 5rem);
+}
+
+.project-page__title {
+  margin: 0 0 clamp(1.5rem, 4vw, 3rem);
+  color: theme.$title;
+  font-size: clamp(1.85rem, 5.5vw, 3.25rem);
+  line-height: 1.15;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+
+  &::after {
+    display: block;
+    inline-size: min(6rem, 35%);
+    margin-block-start: 0.7rem;
+    border-block-end: 1px solid currentColor;
+    content: '';
+  }
+}
+
+.project-page :where(a, button):focus-visible {
+  outline: 2px solid theme.$title;
+  outline-offset: 3px;
+}

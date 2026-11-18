@@ -1,0 +1,45 @@
+@use 'styles/theme';
+
+$background-top: #352452;
+$background-bottom: #5a4a71;
+$text: #fff9ff;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: theme.$title $background-top;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient($background-top, $background-bottom);
+  color: $text;
+  font-family: system-ui, sans-serif;
+}
+
+.site-layout {
+  display: flex;
+  flex-direction: column;
+  width: min(100% - 2rem, 80rem);
+  min-height: 100vh;
+  margin-inline: auto;
+}
+
+.site-layout__main_centered {
+  margin-block: auto;
+  padding-block: clamp(1.5rem, 5vh, 3rem);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+html[data-layout-debug] body * {
+  box-shadow: inset 0 0 0 2px #f00;
+}

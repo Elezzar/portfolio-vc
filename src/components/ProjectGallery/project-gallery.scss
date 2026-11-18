@@ -1,0 +1,63 @@
+@use '../../styles/theme';
+
+.project-gallery {
+  min-inline-size: 0;
+  &__popup-slider {
+    inline-size: 100%;
+  }
+
+  &__popup-image {
+    display: block;
+    flex: 0 0 100%;
+    min-inline-size: 0;
+    inline-size: 100%;
+    block-size: min(74dvh, 48vw);
+    object-fit: contain;
+  }
+
+
+  &__figure {
+    display: grid;
+    grid-area: 1 / 2 / span 2;
+    grid-template-rows: subgrid;
+    min-inline-size: 0;
+    margin: 0;
+  }
+
+  &__viewport {
+    min-inline-size: 0;
+    border-radius: 0.65rem;
+  }
+
+  &__viewport_popup {
+    grid-area: 1 / 2;
+    border-radius: 0;
+  }
+
+  &__preview {
+    flex: 0 0 100%;
+    min-inline-size: 0;
+    aspect-ratio: 16 / 9;
+    display: block;
+    inline-size: 100%;
+    padding: 0;
+    border: 0;
+    border-radius: 0.65rem;
+    background: transparent;
+    cursor: zoom-in;
+  }
+
+  &__image {
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: contain;
+  }
+
+  &__caption {
+    margin-block-start: 0.5rem;
+    color: theme.$muted;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+}

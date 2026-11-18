@@ -1,0 +1,18 @@
+@use 'theme';
+
+@mixin base {
+  display: grid;
+  place-items: center;
+  inline-size: clamp(2rem, 5vw, 2.75rem);
+  aspect-ratio: 1;
+  padding: 0;
+  border: 1px solid theme.$control;
+  border-radius: 50%;
+  background: transparent;
+  color: theme.$control;
+  cursor: pointer;
+
+  &:hover {
+    background: #ffffff21;
+  }
+}
