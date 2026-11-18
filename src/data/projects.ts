@@ -13,6 +13,7 @@ export interface Project {
   name: Record<Language, string>;
   technologies: readonly string[];
   repositoryUrl: string;
+  demoUrl?: string;
   images: readonly [ProjectScreenshot, ...ProjectScreenshot[]];
   copy: Record<Language, ProjectDescription>;
 }

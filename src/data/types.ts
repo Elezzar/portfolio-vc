@@ -20,5 +20,6 @@ export interface ProjectCopy {
   about: string;
   technologies: string;
   repository: string;
+  openSite: string;
   missing: string;
 }

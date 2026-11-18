@@ -141,3 +141,16 @@ it.each([
   await openPortfolio(`/${query}#projects/${id}`);
   expect(screen.getByRole('link', { name: label }).getAttribute('href')).toBe(`https://github.com/Elezzar/${id}`);
 });
+
+it.each([
+  ['mesto-project', '', 'Открыть сайт'],
+  ['russian-travel', '?lang=en', 'Open live site'],
+])('links %s to its live website', async (id, query, label) => {
+  await openPortfolio(`/${query}#projects/${id}`);
+  expect(screen.getByRole('link', { name: label }).getAttribute('href')).toBe(`https://elezzar.github.io/${id}/`);
+});
+
+it.each(['friends-fund-project', 'react-burger', 'mesto-project-plus'])('omits the live link for %s', async (id) => {
+  await openPortfolio(`/#projects/${id}`);
+  expect(screen.queryByRole('link', { name: 'Открыть сайт' })).toBeNull();
+});

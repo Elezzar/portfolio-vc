@@ -18,7 +18,7 @@
   min-inline-size: 0;
 
   .project-detail__heading,
-  .project-detail__repository {
+  .project-detail__resource-link {
     margin: 0;
     color: theme.$title;
     font-size: clamp(1.2rem, 3vw, 1.6rem);
@@ -37,7 +37,7 @@
   }
 }
 
-.project-detail__repository {
+.project-detail__resource-link {
   justify-self: start;
   text-decoration: none;
   cursor: pointer;

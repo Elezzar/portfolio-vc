@@ -27,7 +27,10 @@ export default function ProjectDetail({ language, projectId }: ProjectDetailProp
             <p className="project-detail__paragraph">{project.copy[language].description}</p>
             <h2 className="project-detail__heading">{copy.technologies}</h2>
             <p className="project-detail__paragraph">{project.technologies.join(', ')}</p>
-            <a className="project-detail__repository" href={project.repositoryUrl}>{copy.repository}</a>
+            <a className="project-detail__resource-link" href={project.repositoryUrl}>{copy.repository}</a>
+            {project.demoUrl && (
+              <a className="project-detail__resource-link" href={project.demoUrl}>{copy.openSite}</a>
+            )}
           </div>
         </div>
       )}
